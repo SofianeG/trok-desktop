@@ -1,0 +1,74 @@
+.Container{
+    border-color: 'blue';
+    /* box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); */
+    background-color: white;
+    border-width: 15px;
+    border-radius: 4px;
+    border:solid;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 322px;
+    height: 447px;
+}
+
+.Container:hover{
+    /* box-shadow: 0 1px 1px 0 rgba(0,0,0,0.2); */
+}
+
+.title{
+    font-size: 20px;
+    text-align: center;
+    font-family: "Open Sans ";
+}
+
+.subtitle{
+    font-size: 11px;
+    text-align: center;
+    font-family: "Open Sans Regular";
+
+}
+
+.button_G{
+    Width:252px;
+    Height:35px;
+    color:#6D7278;
+    border-radius: 26px;
+    background-color: #D4D4D4;
+    text-align: center;
+}
+.button_FB{
+    Width:252px;
+    Height:35px;
+    color:#6D7278;
+    border-radius: 26px;
+    background-color: #4B74FF;
+    text-align: center;
+    margin-top: 14px;
+}
+
+.input{
+    Width:252px;
+    Height:29px;
+    color:#D4D4D4;
+}
+
+.button_continuer_container{
+    text-align: center;
+}
+
+.button_continuer{
+    background-color: #0091FF;
+    Width:252px;
+    Height:29px;
+    border-radius: 26px;
+    border-color: #0091FF;
+    color:#FFFFFF;
+}
+
+.register{
+   text-decoration: underline;
+   text-align: center;
+   font-size: 11px;
+   color: #3A3A3A;
+}
