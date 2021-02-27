@@ -1,0 +1,60 @@
+.navContainer{
+  display: flex;
+  justify-content: space-between;
+  text-decoration: none;
+  box-shadow: 0 3px 3px 0 rgba(0,0,0,0.2);
+  width: 100%;
+  height: 44px;
+}
+
+.navContainer:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+.navContainerLeft{
+  display: flex; 
+  flex-direction: row;
+  justify-content: space-between;
+  width: 526px;
+  /* background-color: brown; */
+  align-items: center;
+}
+
+.input{
+  display: flex;
+  justify-content: flex-start;
+  width: 247px;
+  height:26px;
+  border-radius: 13px;
+  border-color: #BFBDBD;
+  color: #BFBDBD;
+}
+
+.editIcon{
+  height:30%;
+  height:14px;
+  background-color: blue;
+}
+
+.button{
+  background-color: #40CE6A;
+  color: #FFFFFF;
+  width: 155px;
+  height:26px;
+  justify-content: center;
+  border-color: #40CE6A;
+  font-size: 11px;
+  background-color: grey;
+}
+
+.Association, .Favorites , .Messages,.Connection{
+  cursor: pointer;
+  font-size: 11px;
+}
+.ConnectionContainer{
+  display: flex;
+  flex-direction: row;
+  margin: 0 auto;
+  font-size: 11px;
+
+}
