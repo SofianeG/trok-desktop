@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import eyeIcon from '../../../assets/Icon/icons8-eye.svg';
-import redCross from '../../../assets/Icon/icons8-cancel.svg';
+import eyeIcon from '../../../assets/Icons/icons8-eye.svg';
+import redCross from '../../../assets/Icons/icons8-cancel.svg';
 import style from './Password.module.css';
-import arrowRight from '../../../assets/Icon/arrowRight.svg';
-import arrowBottom from '../../../assets/Icon/arrowBottom.svg';
+import arrowRight from '../../../assets/Icons/arrowRight.svg';
+import arrowBottom from '../../../assets/Icons/arrowBottom.svg';
 
 const PasswordScreen = () => {
   const [showResultsPassword, setShowResultsPassword] = useState(false);

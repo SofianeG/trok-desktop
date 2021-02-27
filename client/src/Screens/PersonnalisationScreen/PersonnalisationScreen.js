@@ -6,8 +6,8 @@ import Good from './Goods/Good';
 import Services from './Services/Services';
 import Service from './Services/Service';
 import Footer from '../../components/Footer/Footer';
-import arrowBottom from '../../assets/PersonnalisationScreenIcons/arrow/arrowBottom.svg';
-import arrowRight from '../../assets/PersonnalisationScreenIcons/arrow/arrowRight.svg';
+import arrowBottom from '../../assets/PersonnalisationScreenIcons/arrows/arrowBottom.svg';
+import arrowRight from '../../assets/PersonnalisationScreenIcons/arrows/arrowRight.svg';
 
 const PersonnalisationScreen = () => {
   const [showResultsBiens, setShowResultsBiens] = useState(false);

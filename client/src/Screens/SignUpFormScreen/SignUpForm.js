@@ -1,11 +1,11 @@
-import React, {useState, useContext} from 'react';
+import React, { useState, useContext } from 'react';
 import SignInForm from '../SignInFormScreen/SignInForm';
-import Oval from '../../assets/Icon/Oval.svg';
+import Oval from '../../assets/Icons/Oval.svg';
 import axios from 'axios';
 import UploadImage from '../../components/Profil/UploadImage';
 import style from './SignUpForm.module.css';
-import {UidContext} from '../../Routes/AppContext';
-import {useSelector} from 'react-redux';
+import { UidContext } from '../../Routes/AppContext';
+import { useSelector } from 'react-redux';
 import Filebase from 'react-file-base64';
 
 const SignUpForm = () => {
@@ -33,7 +33,7 @@ const SignUpForm = () => {
     const emailError = document.querySelector('.email.error');
     const passwordError = document.querySelector('.password.error');
     const passwordConfirmError = document.querySelector(
-      '.password-confirm.error',
+      '.password-confirm.error'
     );
 
     if (formData.password !== formData.controlPassword) {
@@ -80,7 +80,7 @@ const SignUpForm = () => {
         </>
       ) : (
         <>
-          <div style={{display: 'flex', justifyContent: 'center'}}>
+          <div style={{ display: 'flex', justifyContent: 'center' }}>
             <div className={style.container}>
               <div>
                 <h1>Créez un compte</h1>
@@ -90,8 +90,8 @@ const SignUpForm = () => {
                   <Filebase
                     type="file"
                     multiple={false}
-                    onDone={({base64}) =>
-                      setFormData({...formData, selectedFile: base64})
+                    onDone={({ base64 }) =>
+                      setFormData({ ...formData, selectedFile: base64 })
                     }
                   />
                   <input
@@ -100,7 +100,7 @@ const SignUpForm = () => {
                     id="firstName"
                     value={formData.firstName}
                     onChange={(e) =>
-                      setFormData({...formData, firstName: e.target.value})
+                      setFormData({ ...formData, firstName: e.target.value })
                     }
                     className={style.input}
                     placeholder="prénom"
@@ -111,7 +111,7 @@ const SignUpForm = () => {
                     id="lastName"
                     value={formData.lastName}
                     onChange={(e) =>
-                      setFormData({...formData, lastName: e.target.value})
+                      setFormData({ ...formData, lastName: e.target.value })
                     }
                     className={style.input}
                     placeholder="nom"
@@ -122,7 +122,7 @@ const SignUpForm = () => {
                     id="email"
                     value={formData.email}
                     onChange={(e) =>
-                      setFormData({...formData, email: e.target.value})
+                      setFormData({ ...formData, email: e.target.value })
                     }
                     className={style.input}
                     placeholder="email"
@@ -136,7 +136,7 @@ const SignUpForm = () => {
                     id="password"
                     value={formData.password}
                     onChange={(e) =>
-                      setFormData({...formData, password: e.target.value})
+                      setFormData({ ...formData, password: e.target.value })
                     }
                     className={style.input}
                     placeholder="mot de passe"

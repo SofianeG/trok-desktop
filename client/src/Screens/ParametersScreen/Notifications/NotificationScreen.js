@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import Card from './Cards/Card';
-import arrowRight from '../../../assets/Icon/arrowRight.svg';
-import arrowBottom from '../../../assets/Icon/arrowBottom.svg';
+import arrowRight from '../../../assets/Icons/arrowRight.svg';
+import arrowBottom from '../../../assets/Icons/arrowBottom.svg';
 
 const NotificationScreen = () => {
   const [showResultsNotifications, setShowResultsNotifications] = useState(
