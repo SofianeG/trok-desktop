@@ -29,7 +29,7 @@ const ListImages = [
     id: 5,
     image: Photo5,
     text:
-      'Vous pouvez également faire un don en consultant les demandes dans la rubrique associations',
+      'Vous pouvez également faire un don en consultant les demandes dans la rubrique associations ',
   },
 ];
 
