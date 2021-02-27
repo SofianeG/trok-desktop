@@ -26,10 +26,7 @@ const index = () => {
         <Route path="/user" exact component={UserPage} />
         <Route path="/profile" exact component={ProfileScreen} />
         <Route path="/about" exact component={AboutScreen} />
-<<<<<<< HEAD
-=======
         <Route path="/parameters" exact component={ParametersScreen} />
->>>>>>> HomePageScreen
         <Route
           path="/personnalisation"
           exact
