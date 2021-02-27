@@ -1,0 +1,38 @@
+.container{
+  width: 747px;
+}
+
+.TopContainer{
+  display: flex;
+  justify-content: space-between;
+}
+.ServicesText{
+ color: #3A3A3A
+}
+
+.buttonFollowing{
+  width:126px;
+  height:29px;
+  color: white;
+  background-color: #0091FF;
+  border-radius: 5px;
+  border-color:#0091FF ;
+}
+
+.buttonFollowed{
+  width:126px;
+  height:29px;
+  color: #0091FF;
+  background-color: white;
+  border-radius: 5px;
+  border-color:#0091FF ;
+}
+
+.hrLine{
+  width: 747px;
+  height: 1px;
+  border: 0;
+  color: #979797;
+  background: #979797;
+
+}
