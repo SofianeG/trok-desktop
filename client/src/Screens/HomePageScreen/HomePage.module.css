@@ -1,0 +1,156 @@
+.picture{
+  background-repeat: no-repeat ;
+  background-image: url("../../assets/HomepagePictures/woman.png");
+  background-size: 100%  406px;
+}
+
+.container{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+.containerLeft{
+  width: 50%;
+  height:406px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 84px;
+}
+.containerLeftTitle{
+  font-size: 42px;
+  font-family: Open Sans;
+  background-color: purple;
+  width: 396px;
+
+}
+.containerLeftText{
+  font-size: 14px;
+  font-family: Open Sans;
+  background-color: pink;
+  width: 410px;
+  margin-top: 24px;
+}
+.containerRight{
+  width: 50%;
+  height:406px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.containerRightSquare{
+  width: 279px;
+  height:289px;
+  border: solid;
+  border-width: 1px;
+  border-radius: 4px;
+  background-color: rgba(225, 232, 232);
+  opacity: 0.7;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color:#F4F4F2;
+  padding-left: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+select{
+  padding-left: 7px;
+  color: #979797;
+  background-color: white;
+}
+
+input{
+  padding-left: 14px;
+  background-color: white;
+}
+
+.downloadAppContainer{
+  height: 254px;
+  display: flex;
+  /* background-color: blueviolet; */
+  background-image: url('../../assets/HomepagePictures/downloadAppImages/wave-2.png');
+  background-repeat: no-repeat;
+  background-position: center bottom ;
+}
+
+.downloadAppContainerLeft{
+  background-image: url('../../assets/HomepagePictures/downloadAppImages/wave-1.png');
+  background-repeat: no-repeat;
+  background-position: top left;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+}
+
+.downloadAppContainerAppleStore{
+  width: 88px;
+  height: 30px;
+}
+.downloadAppContainerPlayStore{
+  width: 88px;
+  height: 30px;
+  margin-left: 20px;
+}
+
+.downloadAppContainerLeftCenter{
+  /* background-color: yellow; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+  margin-top:25px;
+}
+
+.downloadAppContainerLeftCenterTextContainer{
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.downloadAppContainerLeftCenterTitle{
+  font-size: 23px;
+  font-family: 'Open Sans' ;
+  /* background-color: pink; */
+}
+.downloadAppContainerLeftCenterSubtitle{
+    font-size: 13px;
+    line-height: 16px;
+    font-family: 'Open Sans Regular';
+    width: 243px;
+    /* background-color: purple; */
+    margin-top: 9px;
+}
+
+.downloadAppContainerRight{
+  /* background-color: blueviolet; */
+  display: flex;
+  align-items: center;
+  width: 50%;
+  background-image: url('../../assets/HomepagePictures/downloadAppImages/wave-3.png');
+  background-repeat: no-repeat;
+  background-position: bottom right;
+}
+
+.downloadAppContainerRightFirstImage{
+  width: 88px;
+  margin-left: 11px;
+}
+
+.downloadAppContainerRightSecondImage{
+  width: 88px;
+  margin-left: 11px;
+}
+
+.downloadAppContainerRightThirdImage{
+  width: 88px;
+  margin-left: 11px;
+}
+
+.downloadAppContainerRightFourthImage{
+  width: 88px;
+  margin-left: 11px;
+}
