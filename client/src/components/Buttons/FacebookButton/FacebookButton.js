@@ -1,7 +1,7 @@
 import React from 'react';
 import FacebookLogin from 'react-facebook-login';
 import axios from 'axios';
-import FB from '../../../assets/Icon/icons8-facebook_f.svg';
+import FB from '../../../assets/Icons/icons8-facebook_f.svg';
 import style from './FacebookButton.module.css';
 
 const FacebookButton = () => {

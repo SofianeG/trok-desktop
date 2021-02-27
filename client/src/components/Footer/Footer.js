@@ -1,5 +1,5 @@
 import React from 'react';
-import Logo from '../../assets/Icon/trokeo.svg';
+import Logo from '../../assets/Icons/trokeo.svg';
 import FB from '../../assets/HomepagePictures/fb.svg';
 import Insta from '../../assets/HomepagePictures/insta.svg';
 import style from './Footer.module.css';

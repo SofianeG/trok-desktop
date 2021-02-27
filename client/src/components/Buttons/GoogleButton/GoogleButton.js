@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import GoogleLogin from 'react-google-login';
-import G from '../../../assets/Icon/icons8-google.svg';
+import G from '../../../assets/Icons/icons8-google.svg';
 import style from './GoogleButton.module.css';
 
 const GoogleButton = () => {
