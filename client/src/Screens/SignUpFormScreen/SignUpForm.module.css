@@ -1,0 +1,25 @@
+.container{
+    display: "flex";
+    justify-content: "center";
+    text-align: center;
+    height: 737px;
+    border:solid grey;
+    width: 579px;
+    text-align: center;
+}
+
+.input{
+    width: 344px;
+    height: 42px;
+    border-color: #BFBDBD;
+    border-radius: 1px;
+    margin-top: 16px;
+}
+.button_terminer{
+    width:252px;
+    height:42px;
+    border-radius: 26px;
+    background-color: #0091FF;
+    color: white;
+    border-color:#0091FF ;
+}
