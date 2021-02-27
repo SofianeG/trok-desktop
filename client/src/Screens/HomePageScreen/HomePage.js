@@ -92,7 +92,7 @@ const HomePage = () => {
                 <div>
                   <div style={{ marginBottom: 20 }}>
                     <div style={{ fontSize: 10, fontFamily: 'Open Sans' }}>
-                      Choississez la localisation ?
+                      Choississez la localisation
                     </div>
                     <div style={{ marginTop: 7 }}>
                       <input
