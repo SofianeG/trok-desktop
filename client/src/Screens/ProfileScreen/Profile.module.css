@@ -1,0 +1,108 @@
+.Container{
+  margin-left: 139px;
+  width: 747px;
+  margin-top: 37px;
+}
+
+.PictureContainer{
+display: flex;
+align-items: center;
+}
+.Picture{  
+  height: 86px;
+  width: 86px;
+  border-radius: 100%;
+}
+.textPicture{
+  color:#0091FF;
+  font-family:Open Sans regular;
+  font-size: 13px;
+  margin-left: 22px;
+
+}
+.InputContainerFirstName{
+  /* display: inline-block; */
+
+}
+.labelFirstName{color:#979797}
+
+.InputFirstName{
+  border-color: #BFBDBD;
+  width:344px;
+  height: 44px;
+}
+
+.InputContainerLastName{
+  /* display: inline-block; */
+}
+.labelLastName{
+  color:#979797;
+}
+.InputLastName{  
+  border-color: #BFBDBD;
+  width:344px;
+  height: 44px;}
+
+.line{width: 747px;}
+
+.AboutContainer{}
+.AboutText{
+  color: #BFBDBD;
+
+}
+.AboutInput{width:344px;height: 145px;}
+.EmailContainer{}
+.labelEmail{
+  color: #BFBDBD;
+
+}
+.InputEmail{
+  width:344px;
+  height: 44px; ;
+}
+.TelephoneContainer{}
+.labelTelephone{	
+  color: #BFBDBD;
+}
+.InputTelephone{}
+.GenderContainer{}
+.labelGender{
+  color: #BFBDBD;
+
+}
+.InputGenderSelect{
+  border-color: #BFBDBD;
+  width:344px;
+  height: 44px; ;
+}
+.InputGenderOption{color:#9A9999;font-size: 12px;}
+option  {
+	color: #BFBDBD;
+}
+.GeolocalisationContainer{
+  display: flex;
+  justify-content: space-between;
+}
+.GeolocalisationText{
+  color:#979797
+}
+.GeolocalisationSlide{
+
+}
+.ButtonRegisterContainer{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 129px;
+  margin-top: 62px;
+}
+
+.ButtonRegister{
+  width:320px;
+  height:42px;
+  background-color: #0091FF;
+  border-radius: 26px;
+  color:white;
+  font-family: Open Sans Regular;
+  font-size: 16px;
+  
+}
