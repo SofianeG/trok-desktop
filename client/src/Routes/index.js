@@ -5,33 +5,33 @@ import {
   Route,
   Switch,
 } from 'react-router-dom';
-// import NavBar from '../components/NavBar/NavBar';
+import NavBar from '../components/NavBar/NavBar';
 import HomePage from '../Screens/HomePageScreen/HomePage';
-// import UserPage from '../components/Profil/UserPage';
-// import PersonnalisationScreen from '../Screens/PersonnalisationScreen/PersonnalisationScreen';
-// import SignInForm from '../Screens/SignInFormScreen/SignInForm';
-// import SignUpForm from '../Screens/SignUpFormScreen/SignUpForm';
-// import ProfileScreen from '../Screens/ProfileScreen/ProfileScreen';
-// import AboutScreen from '../Screens/AboutScreen/AboutScreen';
-// import ParametresScreen from '../Screens/ParametresScreen/ParametresScreen';
+import UserPage from '../components/Profil/UserPage';
+import PersonnalisationScreen from '../Screens/PersonnalisationScreen/PersonnalisationScreen';
+import SignInForm from '../Screens/SignInFormScreen/SignInForm';
+import SignUpForm from '../Screens/SignUpFormScreen/SignUpForm';
+import ProfileScreen from '../Screens/ProfileScreen/ProfileScreen';
+import AboutScreen from '../Screens/AboutScreen/AboutScreen';
+import ParametresScreen from '../Screens/ParametresScreen/ParametresScreen';
 
 const index = () => {
   return (
     <Router>
-      {/* <NavBar /> */}
+      <NavBar />
       <Switch>
-        {/* <Route path="/login" exact component={SignInForm} />
-        <Route path="/register" exact component={SignUpForm} /> */}
+        <Route path="/login" exact component={SignInForm} />
+        <Route path="/register" exact component={SignUpForm} />
         <Route path="/" exact component={HomePage} />
-        {/* <Route path="/user" exact component={UserPage} />
+        <Route path="/user" exact component={UserPage} />
         <Route path="/profile" exact component={ProfileScreen} />
         <Route path="/about" exact component={AboutScreen} />
-        <Route path="/parameters" exact component={ParametersScreen} /> */}
-        {/* <Route
+        <Route path="/parametres" exact component={ParametresScreen} />
+        <Route
           path="/personnalisation"
           exact
           component={PersonnalisationScreen}
-        /> */}
+        />
         <Redirect to="/" />
       </Switch>
     </Router>
