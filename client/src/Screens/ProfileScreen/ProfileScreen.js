@@ -4,7 +4,7 @@ import { useSelector } from 'react-redux';
 import Switch from '@material-ui/core/Switch';
 import Footer from '../../components/Footer/Footer';
 import GreenContainer from '../../components/GreenContainer/GreenContainer';
-import UploadImage from '../../components/Profil/UploadImage';
+// import UploadImage from '../../components/Profil/UploadImage';
 
 const ProfileScreen = () => {
   const userData = useSelector((state) => state.userReducer);
