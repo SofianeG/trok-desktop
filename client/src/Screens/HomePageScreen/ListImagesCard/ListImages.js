@@ -1,8 +1,8 @@
-import Photo1 from '../../../assets/HomepagePictures/commentsamarche/1.svg';
-import Photo2 from '../../../assets/HomepagePictures/commentsamarche/2.svg';
-import Photo3 from '../../../assets/HomepagePictures/commentsamarche/3.svg';
-import Photo4 from '../../../assets/HomepagePictures/commentsamarche/4.svg';
-import Photo5 from '../../../assets/HomepagePictures/commentsamarche/5.svg';
+import Photo1 from '../../../assets/HomepagePictures/howItWorks/1.svg';
+import Photo2 from '../../../assets/HomepagePictures/howItWorks/2.svg';
+import Photo3 from '../../../assets/HomepagePictures/howItWorks/3.svg';
+import Photo4 from '../../../assets/HomepagePictures/howItWorks/4.svg';
+import Photo5 from '../../../assets/HomepagePictures/howItWorks/5.svg';
 
 const ListImages = [
   {

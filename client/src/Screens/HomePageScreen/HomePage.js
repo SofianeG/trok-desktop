@@ -1,7 +1,7 @@
 import React from 'react';
 import style from './HomePage.module.css';
 
-import Footer from '../../components/Footer/Footer';
+// import Footer from '../../components/Footer/Footer';
 import ListImages from './ListImagesCard/ListImages';
 import ListImage from './ListImagesCard/ListImage';
 
