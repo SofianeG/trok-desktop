@@ -13,7 +13,7 @@ import SignInForm from '../Screens/SignInFormScreen/SignInForm';
 import SignUpForm from '../Screens/SignUpFormScreen/SignUpForm';
 import ProfileScreen from '../Screens/ProfileScreen/ProfileScreen';
 import AboutScreen from '../Screens/AboutScreen/AboutScreen';
-import ParametresScreen from '../Screens/ParametresScreen/ParametresScreen';
+import ParametersScreen from '../Screens/ParametresScreen/ParametersScreen';
 
 const index = () => {
   return (
@@ -26,7 +26,7 @@ const index = () => {
         <Route path="/user" exact component={UserPage} />
         <Route path="/profile" exact component={ProfileScreen} />
         <Route path="/about" exact component={AboutScreen} />
-        <Route path="/parametres" exact component={ParametresScreen} />
+        <Route path="/Parameters" exact component={ParametersScreen} />
         <Route
           path="/personnalisation"
           exact
