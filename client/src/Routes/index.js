@@ -13,7 +13,7 @@ import SignInForm from '../Screens/SignInFormScreen/SignInForm';
 import SignUpForm from '../Screens/SignUpFormScreen/SignUpForm';
 import ProfileScreen from '../Screens/ProfileScreen/ProfileScreen';
 import AboutScreen from '../Screens/AboutScreen/AboutScreen';
-import ParametersScreen from '../Screens/ParametresScreen/ParametersScreen';
+import ParametersScreen from '../Screens/ParametersScreen/ParametersScreen';
 
 const index = () => {
   return (
