@@ -1,0 +1,45 @@
+.container{
+  width:963px;
+  height:261px;
+  margin-top: 19px;
+  background-color: yellow;
+  display: flex;
+  flex-direction: row;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: white;
+  transition: 0.3s;
+}
+
+.container:hover{
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+.leftContainer{
+  width:30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 74px;
+}
+.image{
+  height: 189px;
+}
+.rightContainer{
+  width:70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 72px;
+
+}
+.title{
+  font-size: 20px;
+  font-family: 'Open Sans SemiBold';
+  color:#515151;
+}
+.subtitle{
+  font-size: 15px;
+  font-family: 'Open Sans SemiBold';
+  margin-top: 18px;
+  color:#515151;
+
+}
