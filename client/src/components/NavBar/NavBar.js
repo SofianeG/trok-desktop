@@ -6,10 +6,10 @@ import { useSelector } from 'react-redux';
 
 import style from './NavBar.module.css';
 
-import logo from '../../assets/Icon/trokeo.svg';
-import userLogo from '../../assets/Icon/icons8-user-1.svg';
+import logo from '../../assets/Icons/trokeo.svg';
+import userLogo from '../../assets/Icons/icons8-user-1.svg';
 import UserPage from '../Profil/UserPage';
-import edit from '../../assets/Icon/icons8-edit.svg';
+import edit from '../../assets/Icons/icons8-edit.svg';
 
 const NavBar = () => {
   const uid = useContext(UidContext);
