@@ -3,8 +3,8 @@ import { UidContext } from '../../Routes/AppContext';
 import { useSelector } from 'react-redux';
 import { dateParser } from '../../Routes/Utils';
 import style from './UserPage.module.css';
-import yellowStars from '../../assets/Icon/icons8-star-yellow.svg';
-import whiteStars from '../../assets/Icon/icons8-star-white.svg';
+import yellowStars from '../../assets/Icons/icons8-star-yellow.svg';
+import whiteStars from '../../assets/Icons/icons8-star-white.svg';
 
 import Card from './Card';
 import Footer from '../Footer/Footer';
