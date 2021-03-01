@@ -45,7 +45,7 @@ const SignInForm = () => {
         }
       })
       .catch((err) => {
-        console.log(err);
+        console.log('message:', err);
       });
   };
 

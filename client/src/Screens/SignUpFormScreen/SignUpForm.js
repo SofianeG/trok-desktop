@@ -53,7 +53,7 @@ const SignUpForm = () => {
         },
       })
         .then((res) => {
-          console.log(res, 'resultzt');
+          console.log(res, 'resultat');
           if (res.data.errors) {
             emailError.innerHTML = res.data.errors.email;
             passwordError.innerHTML = res.data.errors.password;
