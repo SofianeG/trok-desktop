@@ -23,11 +23,11 @@ const GoogleButton = () => {
   return (
     <div>
       <GoogleLogin
-        clientId="66744854908-b0ako8jl000jnat52216is95ma1c66c5.apps.googleusercontent.com"
+        // clientId="66744854908-b0ako8jl000jnat52216is95ma1c66c5.apps.googleusercontent.com"
         render={(renderProps) => (
           <button
             className={style.button_G}
-            onClick={renderProps.onClick}
+            // onClick={renderProps.onClick}
             disabled={renderProps.disabled}
           >
             Login avec Google

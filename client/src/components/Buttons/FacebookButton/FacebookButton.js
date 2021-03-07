@@ -26,7 +26,7 @@ const FacebookButton = () => {
         render={(renderProps) => (
           <div>
             <img src={FB} alt="icon" />
-            <button onClick={renderProps.onClick}>Login avec Facebook</button>
+            <button>Login avec Facebook</button>
           </div>
         )}
       />
