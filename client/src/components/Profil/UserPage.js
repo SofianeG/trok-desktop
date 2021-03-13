@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { UidContext } from '../../Routes/AppContext';
+// import { UidContext } from '../../Routes/AppContext';
 import { useSelector } from 'react-redux';
 import { dateParser } from '../../Routes/Utils';
 import style from './UserPage.module.css';
@@ -10,9 +10,10 @@ import Card from './Card';
 import Footer from '../Footer/Footer';
 
 const UserPage = () => {
-  const uid = useContext(UidContext);
+  // const uid = useContext(UidContext);
 
-  const userData = useSelector((state) => state.userReducer);
+  const { auth } = useSelector((state) => ({ ...state }));
+  console.log(auth.user);
 
   return (
     <>
@@ -30,15 +31,15 @@ const UserPage = () => {
               <div className={style.ContainerCardTopLeft}>
                 <div className={style.pictureContainer}>
                   <img
-                    src={userData.selectedFile}
+                    src={auth.user.selectedFile}
                     alt="#"
                     className={style.picture}
                   />
                 </div>
                 <div className={style.ContainerCardTopLeftRight}>
-                  <div>{userData.firstName}</div>
+                  <div>{auth.user.firstName}</div>
                   <div style={{ marginTop: 2, marginBottom: 2 }}>
-                    Membre depuis le {dateParser(userData.createdAt)}
+                    Membre depuis le {dateParser(auth.user.createdAt)}
                   </div>
                   <div>
                     <img alt="#" src={yellowStars} />

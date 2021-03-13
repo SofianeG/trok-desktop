@@ -1,12 +1,13 @@
 import React, { useState, useContext } from 'react';
 import SignInForm from '../SignInFormScreen/SignInForm';
-import Oval from '../../assets/Icons/Oval.svg';
-import axios from 'axios';
-import UploadImage from '../../components/Profil/UploadImage';
+// import UploadImage from '../../components/Profil/UploadImage';
 import style from './SignUpForm.module.css';
 import { UidContext } from '../../Routes/AppContext';
-import { useSelector } from 'react-redux';
+// import { useSelector } from 'react-redux';
 import Filebase from 'react-file-base64';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+import { register } from '../../actions/auth';
 
 const SignUpForm = () => {
   const uid = useContext(UidContext);
@@ -40,23 +41,21 @@ const SignUpForm = () => {
       passwordConfirmError.innerHTML =
         'Les mots de passe ne correspondent pas ';
     } else {
-      console.log(typeof formData.selectedFile, 'selected file');
-      await axios({
-        method: 'post',
-        url: `${process.env.REACT_APP_API_URL}api/user/register`,
-        data: {
-          firstName: formData.firstName,
-          lastName: formData.lastName,
-          email: formData.email,
-          password: formData.password,
-          selectedFile: formData.selectedFile,
-        },
+      await register({
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        password: formData.password,
+        selectedFile: formData.selectedFile,
       })
         .then((res) => {
           console.log(res, 'resultat');
+          toast('Register Success.Please Login');
+
           if (res.data.errors) {
             emailError.innerHTML = res.data.errors.email;
             passwordError.innerHTML = res.data.errors.password;
+            toast(res.data.errors);
           } else {
             setFormSubmit(true);
           }
@@ -65,7 +64,23 @@ const SignUpForm = () => {
           console.log(err);
         });
     }
-    // }
+    //   try {
+    //     const res = await axios.post(`${process.env.REACT_APP_API}/register`, {
+    //       firstName: formData.firstName,
+    //       lastName: formData.lastName,
+    //       email: formData.email,
+    //       password: formData.password,
+    //       selectedFile: formData.selectedFile,
+    //     });
+    //     console.log('REGISTER USER ======>', res);
+    //     toast.success('Register Success.Please Login');
+    //     setFormSubmit(true);
+    //   } catch (err) {
+    //     console.log(err);
+    //     if (err.response.status === 400) {
+    //       toast.error(err.response.data);
+    //     }
+    //   }
   };
 
   return (
@@ -158,7 +173,17 @@ const SignUpForm = () => {
                   />
                   <div className="password-confirm error"></div>
                   <br />
-                  <button type="submit" className={style.button_terminer}>
+                  <button
+                    disabled={
+                      (!formData.firstName,
+                      !formData.lastName,
+                      !formData.email,
+                      !formData.password,
+                      !formData.controlPassword)
+                    }
+                    type="submit"
+                    className={style.button_terminer}
+                  >
                     Terminer
                   </button>
                 </form>

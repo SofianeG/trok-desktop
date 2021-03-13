@@ -7,14 +7,15 @@ import GreenContainer from '../../components/GreenContainer/GreenContainer';
 // import UploadImage from '../../components/Profil/UploadImage';
 
 const ProfileScreen = () => {
-  const userData = useSelector((state) => state.userReducer);
+  // const userData = useSelector((state) => state.userReducer);
+  const { auth } = useSelector((state) => ({ ...state }));
 
   return (
     <>
       <GreenContainer title="Mise à Jour Profil" />
       <div className={style.Container}>
         <div className={style.PictureContainer}>
-          <img alt="#" className={style.Picture} src={userData.selectedFile} />
+          <img alt="#" className={style.Picture} src={auth.user.selectedFile} />
           <form className={style.textPicture}>Changer ma photo de profil</form>
         </div>
         <div>
