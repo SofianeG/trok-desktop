@@ -3,11 +3,11 @@ import Cards from './Cards';
 import Switch from '@material-ui/core/Switch';
 import style from './Card.module.css';
 
-const Card = (props) => {
+const Card = ({ show }) => {
   return (
     <div>
       {Cards.map((item) => (
-        <div style={{ display: props.show ? 'block' : 'none' }}>
+        <div style={{ display: show ? 'block' : 'none' }}>
           <>
             <div>
               <div className={style.title}>{item.title1}</div>

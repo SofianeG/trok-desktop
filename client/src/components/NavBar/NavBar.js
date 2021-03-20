@@ -68,11 +68,7 @@ const NavBar = () => {
           {auth !== null && (
             <>
               <div style={{ marginLeft: 10 }}>
-                <NavLink
-                  to="/login"
-                  style={{ textDecoration: 'none' }}
-                  onClick={logout}
-                >
+                <NavLink to="/user" style={{ textDecoration: 'none' }}>
                   <img src={userLogo} alt="icon" />
                   &nbsp;
                   {auth.user.firstName}

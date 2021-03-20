@@ -15,7 +15,7 @@ const Card = () => {
     } else if (cardObject === 8) {
       history.push('/about');
     } else if (cardObject === 5) {
-      history.push('/parametres');
+      history.push('/parameters');
     }
   };
 

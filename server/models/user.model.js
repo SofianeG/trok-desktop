@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-const {isEmail} = require('validator');
+const { isEmail } = require('validator');
 const bcrypt = require('bcrypt');
 
 const userSchema = new mongoose.Schema(
@@ -19,61 +19,52 @@ const userSchema = new mongoose.Schema(
       unique: true,
       trim: true,
     },
-    gender: {type: String},
+    gender: { type: String },
     email: {
       type: String,
-      required: true,
-      validate: [isEmail],
-      lowercase: true,
-      unique: true,
-      trim: true,
     },
     password: {
       type: String,
-      required: true,
-      max: 1024,
-      minlength: 6,
     },
     selectedFile: {
       type: String,
       default: './uploads/profil/random-user.png',
     },
-    bio: {
-      type: String,
-      max: 1024,
-    },
-    followers: {
-      type: [String],
-    },
-    following: {
-      type: [String],
-    },
-    likes: {
-      type: [String],
-    },
   },
   {
     timestamps: true,
-  },
+  }
 );
 
-// play function before save into display: 'block',
-userSchema.pre('save', async function (next) {
-  const salt = await bcrypt.genSalt();
-  this.password = await bcrypt.hash(this.password, salt);
-  next();
+userSchema.pre('save', function (next) {
+  let user = this;
+  if (user.isModified('password')) {
+    return bcrypt.hash(user.password, 12, function (err, hash) {
+      if (err) {
+        console.log('BCRYPT HASH ERROR', err);
+        return next(err);
+      }
+      user.password = hash;
+      return next();
+    });
+  } else {
+    return next();
+  }
 });
 
-userSchema.statics.login = async function (email, password) {
-  const user = await this.findOne({email});
-  if (user) {
-    const auth = await bcrypt.compare(password, user.password);
-    if (auth) {
-      return user;
+// WE COMPARE  PASSWORD THAT WE SEND FRONT
+//TO THE PASSWORD THAT IS IN OUR DB
+
+userSchema.methods.comparePassword = function (password, next) {
+  bcrypt.compare(password, this.password, function (err, match) {
+    if (err) {
+      console.log('COMPARE PASSWORD ERROR', err);
+      return next(err, false);
     }
-    throw Error('incorrect password');
-  }
-  throw Error('incorrect email');
+    // if no err, we get null
+    console.log('MATCH PASSWORD', match);
+    return next(null, match);
+  });
 };
 
 const UserModel = mongoose.model('user', userSchema);

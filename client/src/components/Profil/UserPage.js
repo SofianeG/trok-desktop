@@ -1,4 +1,4 @@
-import React, { useContext } from 'react';
+import React, { useState } from 'react';
 // import { UidContext } from '../../Routes/AppContext';
 import { useSelector } from 'react-redux';
 import { dateParser } from '../../Routes/Utils';
@@ -8,11 +8,16 @@ import whiteStars from '../../assets/Icons/icons8-star-white.svg';
 
 import Card from './Card';
 import Footer from '../Footer/Footer';
+import Review from '../Reviews/Review';
 
 const UserPage = () => {
-  // const uid = useContext(UidContext);
-
   const { auth } = useSelector((state) => ({ ...state }));
+  const [showComments, setShowComments] = useState(false);
+
+  const Show = () => {
+    setShowComments((prevState) => !prevState);
+  };
+
   console.log(auth.user);
 
   return (
@@ -50,7 +55,15 @@ const UserPage = () => {
                 </div>
               </div>
               <div style={{ alignSelf: 'flex-end' }}>
-                <button className={style.Ratings}>Voir les avis</button>
+                {showComments ? (
+                  <button className={style.Ratings} onClick={Show}>
+                    Ne plus Voir les avis
+                  </button>
+                ) : (
+                  <button className={style.Ratings} onClick={Show}>
+                    Voir les avis
+                  </button>
+                )}
               </div>
             </div>
             <hr
@@ -74,7 +87,7 @@ const UserPage = () => {
           </div>
         </div>
         <div style={{ marginTop: 200, marginBottom: 215 }}>
-          <Card />
+          {showComments ? <Review /> : <Card />}
         </div>
       </div>
       <Footer />

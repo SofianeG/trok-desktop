@@ -1,15 +1,24 @@
 import React from 'react';
-import CardsPremium from './CardsPremium';
 
-const Card = () => {
+const Card = ({ subTitle, title, id, image }) => {
   return (
     <div>
-      {CardsPremium.map((item) => (
-        <div>
-          <div>{item.title}</div>
-          <img src={item.image} alt="#" />
+      <div
+        style={{
+          display: 'flex',
+          flexDirection: 'row',
+          width: 239,
+          height: 296,
+          border: 1,
+          borderColor: 'red',
+        }}
+      >
+        <div key={id}>
+          <div>{title}</div>
+          <img src={image} style={{ width: 163, height: 162 }} alt="#" />
+          <p>{subTitle}</p>
         </div>
-      ))}
+      </div>
     </div>
   );
 };
